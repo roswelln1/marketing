@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- createAccount.html -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/desktop.css">
+  <link rel="stylesheet" href="css/tablet.css"
+        media="screen and (max-width: 900px)">
+  <script src="scripts/rotate.js"></script>
+  <script src="scripts/menus.js"></script>
+  <script src="scripts/feedbackValidate.js"></script>
+  <script src="scripts/loginValidate.js"></script>
+  <script src="scripts/createAccountValidate.js"></script>
+  <title>Create Account</title>
+</head>
+
+<body onload="startRotation()">
+  <header>
+    <div id="logo">
+        <img src="images/health.jpg"
+             alt="Principal Health"
+             width="300"
+             height="300">
+    </div>
+
+    <nav onmouseout="hide()">
+      <ul class="Links">
+        <li><a href="index.html" onmouseover="show('m1')">Home</a></li>
+        <li><a href="shop.html"
+               onmouseover="show('m2')">Shop</a></li>
+        <li>
+          <span onmouseover="show('m3')">Our Mission</span>
+          <div id="m3" onmouseover="show('m3')">
+            <a href="mission.html">Customer Service</a>
+            <a href="faq.html">Frequently Asked Questions</a>
+          </div>
+        </li>
+        <li>
+          <span onmouseover="show('m4')">Your Health</span>
+          <div id="m4" onmouseover="show('m4')">
+            <a href="tools.html">Tools+Resources</a>
+            <a href="expert.html">Ask An Expert</a>
+            <a href="links.html">Useful Links</a>
+          </div>
+        </li>
+        <li>
+          <a href="login.html" onmouseover="show('m5')">Login</a>
+        </li>
+        <li>
+          <span onmouseover="show('m6')">Contact Us</span>
+          <div id="m6" onmouseover="show('m6')">
+            <a href="contact.html">Locations</a>
+            <a href="feedback.html">Feedback Form</a>
+          </div>
+        </li>
+        <li><a href="sitemap.html" onmouseover="show('m7')">Site
+        Map</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <main class="Feedback">
+      <h3>Create Account</h3>
+      <form id="contact" onsubmit="createAccountValidate()">
+        <table>
+          <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username" size="10"></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="text" name="password" size="15"></td>
+          </tr>
+          <tr>
+            <td>Confirm Password:</td>
+            <td><input type="text" name="confirmation" size="15"></td>
+          </tr>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="firstName" size="10"></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="lastName" size="10"></td>
+          </tr>
+          <tr>
+            <td>E-mail Address:</td>
+            <td><input type="text" name="email" size="40"></td>
+          </tr>
+          <tr>
+            <td>State:</td>
+            <td><select name="state">
+              <option>&nbsp;</option>
+              <option>Minnesota</option>
+              <option>Wisconsin</option>
+              <option>North Dakota</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="Create Account"></td>
+            <td class="RightAligned"><input type="reset"
+              value="Reset Form"></td>
+          </tr>
+        </table>
+      </form>
+      <div id="placeholder">
+        <img src="" alt="We care about YOU"
+             width="140" height="170">
+      </div>
+    </main>
+    <footer>
+    Principal Health &copy; 1988 Tina Rammus and Thomas Draven
+    </footer>
+  </body>
+</html>
